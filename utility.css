@@ -1,0 +1,27 @@
+.flexbox{
+    display: flex;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.border{
+    border: 2px solid black;
+}
+.margin{
+    margin: 10px;
+}
+.invert{
+    filter: invert(1);
+}
+.postion-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+}
+.spacebetween{
+    display: flex;
+    justify-content: space-between;
+}

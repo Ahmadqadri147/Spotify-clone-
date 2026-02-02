@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Now Playing - Spotify</title>
+    <link rel="stylesheet" href="player.css">
+</head>
+<body>
+    <div class="player-container">
+        <audio id="audio-player" style="display: none;"></audio>
+
+        <div class="song-art">
+            <img id="song-image" src="https://i.scdn.co/image/ab67616d0000b273d6999fa3f436a152a8226724" alt="Album Art">
+        </div>
+        <div class="song-details">
+            <h1 id="song-title">Song Title</h1>
+            <p id="song-artist">Artist Name</p>
+        </div>
+       <div class="controls">
+        <div class="songinfo"></div>
+        <img id="previous" src="previous.svg" alt="">
+       <img id="play" src="play.svg" alt="">
+       <img id="next" src="next.svg" alt="">
+       <div class="songduration"></div>
+      </div>
+      <div class="seekbaar">
+        <div class="circle"></div>
+      </div>
+        <div class="back-link">
+            <a href="index.html">&larr; Back to Home</a>
+        </div>
+    </div>
+
+    <script src="player.js"></script>
+</body>
+</html>
+</body>
+</html>

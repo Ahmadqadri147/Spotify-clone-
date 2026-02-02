@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone'</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_circle_down" />
+   
+</head>
+
+<body>
+    <header class="header flexbox">
+        <div class="logobox center ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="logo">
+                <path
+                    d="M13.427.01C6.805-.253 1.224 4.902.961 11.524.698 18.147 5.853 23.728 12.476 23.99c6.622.263 12.203-4.892 12.466-11.514S20.049.272 13.427.01m5.066 17.579a.717.717 0 0 1-.977.268 14.4 14.4 0 0 0-5.138-1.747 14.4 14.4 0 0 0-5.42.263.717.717 0 0 1-.338-1.392c1.95-.474 3.955-.571 5.958-.29 2.003.282 3.903.928 5.647 1.92a.717.717 0 0 1 .268.978m1.577-3.15a.93.93 0 0 1-1.262.376 17.7 17.7 0 0 0-5.972-1.96 17.7 17.7 0 0 0-6.281.238.93.93 0 0 1-1.11-.71.93.93 0 0 1 .71-1.11 19.5 19.5 0 0 1 6.94-.262 19.5 19.5 0 0 1 6.599 2.165c.452.245.62.81.376 1.263m1.748-3.551a1.147 1.147 0 0 1-1.546.488 21.4 21.4 0 0 0-6.918-2.208 21.4 21.4 0 0 0-7.259.215 1.146 1.146 0 0 1-.456-2.246 23.7 23.7 0 0 1 8.034-.24 23.7 23.7 0 0 1 7.657 2.445c.561.292.78.984.488 1.546">
+                </path>
+            </svg>
+        </div>
+
+
+        <div class="homesvg center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="house-icon">
+                <path
+                    d="M13.5 1.515a3 3 0 0 0-3 0L3 5.845a2 2 0 0 0-1 1.732V21a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6h4v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V7.577a2 2 0 0 0-1-1.732z">
+                </path>
+            </svg>
+        </div>
+        <div class="search-box">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M10.533 1.27893C5.35215 1.27893 1.12598 5.41887 1.12598 10.5579C1.12598 15.697 5.35215 19.8369 10.533 19.8369C12.767 19.8369 14.8235 19.0671 16.4402 17.7794L20.7929 22.132C21.1834 22.5226 21.8166 22.5226 22.2071 22.132C22.5976 21.7415 22.5976 21.1083 22.2071 20.7178L17.8634 16.3741C19.1616 14.7849 19.94 12.7634 19.94 10.5579C19.94 5.41887 15.7138 1.27893 10.533 1.27893ZM3.12598 10.5579C3.12598 6.55226 6.42768 3.27893 10.533 3.27893C14.6383 3.27893 17.94 6.55226 17.94 10.5579C17.94 14.5636 14.6383 17.8369 10.533 17.8369C6.42768 17.8369 3.12598 14.5636 3.12598 10.5579Z">
+                </path>
+            </svg>
+
+            <input type="text" class="discover" placeholder="What do you want to play?">
+
+            <div class="divider"></div>
+
+
+            <svg class="icon-end" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M4 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v4H4zM1.513 9.37A1 1 0 0 1 2.291 9H21.71a1 1 0 0 1 .978 1.208l-2.17 10.208A2 2 0 0 1 18.562 22H5.438a2 2 0 0 1-1.956-1.584l-2.17-10.208a1 1 0 0 1 .201-.837zM12 17.834c1.933 0 3.5-1.044 3.5-2.333s-1.567-2.333-3.5-2.333S8.5 14.21 8.5 15.5s1.567 2.333 3.5 2.333z">
+                </path>
+            </svg>
+        </div>
+
+        <div class="list">
+            <ul>
+                <li>Premium</li>
+                <li>Support</li>
+                <li>Download</li>
+                <div class="divider"></div>
+            </ul>
+        </div>
+        <div class="download">
+            <div class="install">
+                <span class="material-symbols-outlined">
+                    arrow_circle_down
+                </span>
+                <p id="1">Install App</p>
+            </div>
+            <p class="singup">Sing up</p>
+        </div>
+        <div class="login">
+            <p>Log in</p>
+        </div>
+
+
+
+    </header>
+
+    <div class="main flexbox">
+        <div class="box1 margin border">
+            <header class="box1-header " <p>Your Library</p>
+                <div class="plus invert">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
+                        <path
+                            d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75">
+                        </path>
+                    </svg>
+                </div>
+            </header>
+            <div class="list ">
+                <div class="create-playlist">
+                    <div class="text">
+                        <h4>Create Your first Playlist</h4>
+                        <P>It's easy, we'll help you</P>
+                    </div>
+                    <div class="create-icon">
+                        <p>
+                            Create playlist
+                        </p>
+                    </div>
+
+                </div>
+                <div class="podcast">
+                    <div class="text">
+                        <h4>Let's find podcasts to follows.</h4>
+                        <P>We'll keep you updated on new episodes</P>
+                    </div>
+                    <div class="create-icon">
+                        <p>
+                            Browse podcasts
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <footer class="postion-relative">
+                <a href="">
+                    <ul class="flexbox">
+                        <li>legal</li>
+                        <li>Safty&PrivacyCenter</li>
+                        <li>PrivacyPolicy</li>
+                        <li>Cookies</li>
+                        <li>AboutAds</li>
+                        <li>Accessibility</li>
+                    </ul>
+                    <p>Cookies</p>
+                </a>
+
+                <div class="language flexbox">
+                    <img src='data:image/svg+xml;utf8,
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="black">
+                             <path d="M8.152 16H8a8 8 0 1 1 .152 0m-.41-14.202c-.226.273-.463.713-.677 1.323-.369 1.055-.626 2.496-.687 4.129h3.547c-.06-1.633-.318-3.074-.687-4.129-.213-.61-.45-1.05-.676-1.323-.194-.235-.326-.285-.385-.296h-.044c-.055.007-.19.052-.391.296M4.877 7.25c.062-1.771.34-3.386.773-4.624q.148-.427.329-.806a6.51 6.51 0 0 0-4.436 5.43zm-3.334 1.5a6.51 6.51 0 0 0 4.436 5.43 8 8 0 0 1-.33-.806c-.433-1.238-.71-2.853-.772-4.624zm4.835 0c.061 1.633.318 3.074.687 4.129.214.61.451 1.05.677 1.323.202.244.336.29.391.297l.044-.001c.06-.01.19-.061.385-.296.226-.273.463-.713.676-1.323.37-1.055.626-2.496.687-4.129zm5.048 0c-.061 1.771-.339 3.386-.772 4.624q-.123.353-.268.674a6.5 6.5 0 0 0 4.071-5.298zm3.031-1.5a6.51 6.51 0 0 0-4.071-5.298q.145.322.268.674c.433 1.238.711 2.853.772 4.624z"/>
+                      </svg>' alt="Custom Icon" />
+                    <p>English </p>
+                </div>
+
+            </footer>
+        </div>
+        <div class="box2 margin border">
+
+            <div class="heading">
+                <h1>Trending songs</h1>
+                <p>show all</p>
+            </div>
+            <div class="tmp">
+
+                <div class="template" 
+                     data-song="songs/oorum-blood.mp3"
+                     data-img="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df"
+                     data-title="Oorum Blood - From &quot;Dude&quot;"
+                     data-artist="Sai Abhyankkar, Paal Dabba, Bebhumika,...">
+                    <div class="image">
+                        <img src="https://i.scdn.co/image/ab67616d00001e027b5fd77735d2fa9cc7e982df" alt="">
+                        <div class="icon">
+                            <img src='data:image/svg+xml;utf8,
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black">
+                             <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path>
+                        </svg>' width="50" height="50" />
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h1>Oorum Blood - From "Dude"</h1>
+                        <p>Sai Abhyankkar, Paal Dabba, Bebhumika,... </p>
+                    </div>
+                </div>
+
+                <div class="template" 
+                     data-song="songs/for-a-reason.mp3"
+                     data-img="https://i.scdn.co/image/ab67616d00001e023dc5639cb321a69b721bed92"
+                     data-title="For A Reason"
+                     data-artist="Karan Aujla, Ikky">
+                    <div class="image">
+                        <img src="https://i.scdn.co/image/ab67616d00001e023dc5639cb321a69b721bed92" alt="">
+                        <div class="icon">
+                            <img src='data:image/svg+xml;utf8,
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black">
+                             <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path>
+                        </svg>' width="50" height="50" />
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h1>For A Reasion</h1>
+                        <p>Karan Aujla, Ikky </p>
+                    </div>
+                </div>
+
+                <div class="template" 
+                     data-song="song1.mp3"
+                     data-img="https://i.scdn.co/image/ab67616d00001e0225fa2d19b2363a9520a34409"
+                     data-title="Arz Kiya Hai | Coke Studio Bharat"
+                     data-artist="Anuv jain">
+                    <div class="image">
+                        <img src="https://i.scdn.co/image/ab67616d00001e0225fa2d19b2363a9520a34409" alt="">
+                        <div class="icon">
+                            <img src='data:image/svg+xml;utf8,
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black">
+                             <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path>
+                        </svg>' width="50" height="50" />
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h1>Arz Kiya Hai | Coke Studio Bharat</h1>
+                        <p> Anuv jain </p>
+                    </div>
+                </div>
+
+                <div class="template" 
+                     data-song="songs/bijuria.mp3"
+                     data-img="https://i.scdn.co/image/ab67616d00001e02f603333e0fab9745b8a53f69"
+                     data-title="Bijuria (From &quot;Sunny Sanskari Ki Tulsi Kumari&quot;)"
+                     data-artist="Sonu nigam,Tanishk Bagchi,Ravi Pawar,...">
+                    <div class="image">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02f603333e0fab9745b8a53f69" alt="">
+                        <div class="icon">
+                            <img src='data:image/svg+xml;utf8,
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black">
+                             <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path>
+                        </svg>' width="50" height="50" />
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h1>Bijuria (From "Sunny Sanskari Ki Tulsi Kumari")</h1>
+                        <p> Sonu nigam,Tanishk Bagchi,Ravi Pawar,... </p>
+                    </div>
+                </div>
+
+                <div class="template" 
+                     data-song="songs/scheriya.mp3"
+                     data-img="https://i.scdn.co/image/ab67616d00001e02dc54baf911bfff7715c66481"
+                     data-title="SHERIYA"
+                     data-artist="ARJN,KDS,RONN">
+                    <div class="image">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02dc54baf911bfff7715c66481" alt="">
+                        <div class="icon">
+                            <img src='data:image/svg+xml;utf8,
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black">
+                             <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path>
+                        </svg>' width="50" height="50" />
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h1>SHERIYA</h1>
+                        <p> ARJN,KDS,RONN </p>
+                    </div>
+                </div>
+
+            </div>
+
+             <div class="singer">
+                 <h1>Popular Artists</h1>
+                <p>show all</p>
+             </div>
+            <div class="art">
+                
+                <div class="artist">
+                        <div class="image">
+                        <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" alt="">
+                        <div class="icon">
+                            <img src='data:image/svg+xml;utf8,
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black">
+                             <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path>
+                        </svg>' width="50" height="50" />
+                        </div>
+                         </div>
+                         <h1>Pritam</h1>
+                        <p>Artist</p>
+                 </div>
+
+                 <div class="artist">
+                        <div class="image">
+                        <img src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c" alt="">
+                        <div class="icon">
+                            <img src='data:image/svg+xml;utf8,
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black">
+                             <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path>
+                        </svg>' width="50" height="50" />
+                        </div>
+                         </div>
+                         <h1>A.R.Rahman</h1>
+                        <p>Artist</p>
+                 </div>
+
+                 <div class="artist">
+                        <div class="image">
+                        <img src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7" alt="">
+                        <div class="icon">
+                            <img src='data:image/svg+xml;utf8,
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black">
+                             <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path>
+                        </svg>' width="50" height="50" />
+                        </div>
+                         </div>
+                         <h1>Arijit Shing</h1>
+                        <p>Artist</p>
+                 </div>
+
+                 <div class="artist">
+                        <div class="image">
+                        <img src="https://i.scdn.co/image/ab67616100005174bb4064bef3a825344d5eb79e" alt="">
+                        <div class="icon">
+                            <img src='data:image/svg+xml;utf8,
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black">
+                             <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path>
+                        </svg>' width="50" height="50" />
+                        </div>
+                         </div>
+                         <h1>Sachin-Jigar</h1>
+                        <p>Artist</p>
+                 </div>
+
+                 <div class="artist">
+                        <div class="image">
+                        <img src="https://i.scdn.co/image/ab6761610000517490b6c3d093f9b02aad628eaf" alt="">
+                        <div class="icon">
+                            <img src='data:image/svg+xml;utf8,
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black">
+                             <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path>
+                        </svg>' width="50" height="50" />
+                        </div>
+                         </div>
+                         <h1>Vishal-Shekhar</h1>
+                        <p>Artist</p>
+                 </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="flexbox spacebetween">
+            <div class="preview">
+                <h3>Preview of Spotify</h3>
+                <p>Sing up to get unlimited songs and podcasts with occational ads. No credit card needed.</p>
+            </div>
+            <div class="singup ">
+                <p>Sing up free</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            background-color: #121212;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        .main {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 60vw;
+            height: 90vh;
+            background-color: #000;
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            overflow: scroll;
+            scrollbar-width: none; 
+        }
+
+        .logo {
+            width: 100px;
+            height: 45px;
+            color: #fff;
+            margin: 0 auto 30px auto;
+            border-radius: 5px;
+        }
+
+        .heading {
+            color: #fff;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .Log-in-way {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .Log-in-way div {
+            background-color: #333;
+            color: #fff;
+            width: 300px;
+            padding: 12px 20px;
+            margin-bottom: 15px;
+            border-radius: 30px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 16px;
+            gap: 15px;
+          
+        }
+
+        .google img,
+        .facebook img,
+        .apple img,
+        .phoneNumber img {
+            width: 25px;
+            height: 25px;
+            object-fit: contain;
+        }
+
+        .google,
+        .facebook,
+        .apple,
+        .phoneNumber {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        .Log-in-way div:hover {
+            background-color: #444;
+        }
+
+        .sepration-line {
+            border-top: 1px solid #333;
+            margin: 30px 0;
+        }
+        .email-box {
+            margin-bottom: 20px;
+           align-items: center;
+           gap: 10px;
+              display: flex;
+             justify-content: center;
+                flex-direction: column;
+        }
+        .email-box h4 {
+            color: #fff;
+            text-align: left;
+            margin-bottom: 8px;
+        }
+        .email-box input {
+            width: 50%;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 30px;
+            background-color: #333;
+            color: #fff;
+            font-size: 16px;
+            outline: none;
+        }
+        .email-box input::placeholder {
+            color: #aaa;
+        }
+        .continue {
+            background-color: #0cb547;
+            color: #000000;
+            width: 50%;
+            margin: 0 auto;
+            padding: 12px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .continue:hover {
+            background-color: #0a9e3d;
+        }
+        .back-link {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="logo" fill="#fff">
+                    <path
+                        d="M13.427.01C6.805-.253 1.224 4.902.961 11.524.698 18.147 5.853 23.728 12.476 23.99c6.622.263 12.203-4.892 12.466-11.514S20.049.272 13.427.01m5.066 17.579a.717.717 0 0 1-.977.268 14.4 14.4 0 0 0-5.138-1.747 14.4 14.4 0 0 0-5.42.263.717.717 0 0 1-.338-1.392c1.95-.474 3.955-.571 5.958-.29 2.003.282 3.903.928 5.647 1.92a.717.717 0 0 1 .268.978m1.577-3.15a.93.93 0 0 1-1.262.376 17.7 17.7 0 0 0-5.972-1.96 17.7 17.7 0 0 0-6.281.238.93.93 0 0 1-1.11-.71.93.93 0 0 1 .71-1.11 19.5 19.5 0 0 1 6.94-.262 19.5 19.5 0 0 1 6.599 2.165c.452.245.62.81.376 1.263m1.748-3.551a1.147 1.147 0 0 1-1.546.488 21.4 21.4 0 0 0-6.918-2.208 21.4 21.4 0 0 0-7.259.215 1.146 1.146 0 0 1-.456-2.246 23.7 23.7 0 0 1 8.034-.24 23.7 23.7 0 0 1 7.657 2.445c.561.292.78.984.488 1.546"
+                        fill="#fff"></path>
+                </svg>
+            </div>
+            <div class="heading">
+               <h3> Log in to Spotify</h3>
+            </div>
+            <div class="Log-in-way">
+                <div class="google">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/09/Google-Symbol.png" alt="">
+                    <p>Continue with Google</p>
+                </div>
+                <div class="facebook">
+                    <img src=https://static.vecteezy.com/system/resources/previews/053/986/346/non_2x/facebook-icon-logo-symbol-free-png.png
+                        alt="">
+                    <p>Continue with Facebook</p>
+                </div>
+                <div class="apple">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/04/Apple-Logo.png" alt="">
+                    <p>Continue with Apple</p>
+                </div>
+                <div class="phoneNumber">
+                    <img src="https://www.pngall.com/wp-content/uploads/13/Phone-Logo-PNG-Images-HD.png" alt="">
+                    <p>Continue with Phone Number</p>
+                </div>
+            </div>
+            <div class="sepration-line"></div>
+            <div class="email-box">
+                <h4> Email or username</h4>
+                <input type="text" placeholder="Enter your email address">
+            </div>
+            <div class="continue"><h5>Continue</h5></div>
+            <div class="back-link">
+               <a href="index.html">bake to the home page</a>
+        </div>
+    </div>
+</body>
+
+</html>

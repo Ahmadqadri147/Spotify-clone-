@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Songs Library</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #202020;
+      color: white;
+      overflow: hidden;
+    }
+
+    main {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* CONTAINER */
+    .container {
+      width: 80vw;
+      height: 90vh;
+      background-color: #121212;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(29, 185, 84, 0.3);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* SONG LIST */
+    .Songlist {
+      flex: 1;
+      overflow-y: auto;
+    }
+
+    .Songlist ul {
+      list-style-type: decimal;
+      padding: 20px 40px;
+    }
+
+    .Songlist ul li {
+      background-color: #1db954;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 10px 20px;
+      color: #000;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .Songlist ul li:hover {
+      background-color: #1ed760;
+      transform: scale(1.02);
+    }
+
+    .Songlist ul li img {
+      width: 50px;
+      height: 50px;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+
+    .info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 20px;
+    }
+
+    .controls {
+      padding: 15px 0;
+      background-color: #181818;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top: 2px solid #1db954;
+    }
+    .controls img {
+      width: 30px;
+      height: 30px;
+      margin: 0 20px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      filter: invert(1);
+    }
+    .controls img:hover {
+      transform: scale(1.2);
+    }
+    .controls .songinfo {
+      flex: 1;
+      text-align: left;
+      padding-left: 50px;
+    }
+    .controls .songduration {
+      flex: 1;
+      text-align: right;
+      padding-right: 50px;
+    }
+    .controls .controls-right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex: 1;
+      gap: 20px;
+      padding-right: 30px;
+    }
+.volume {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+ 
+}
+.volume img {
+  width: 20px;
+  height: 20px;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  /* width and height are already set for .controls img */
+}
+
+.volume img:hover {
+  transform: scale(1.1);
+}
+
+.volume:hover .range {
+  opacity: 1;
+  width: 100px;
+  margin-left: 10px; /* Add space between icon and slider */
+}
+
+.range {
+  opacity: 0;
+  width: 0;
+  transition: opacity 0.3s ease, width 0.3s ease, margin-left 0.3s ease;
+  overflow: hidden;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #1db954;
+  cursor: pointer;
+}
+
+    .seekbaar {
+      height: 5px;
+      background-color: #404040;
+      margin: 0 20px 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .seekbaar .circle{
+      width: 15px;
+      height: 15px;
+      background-color: #1db954;
+      border-radius: 50%;
+      position: relative;
+      top: -5px;
+      left: 0;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      transition: left 0.5s ease;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <div class="Songlist">
+        <ul>
+
+        </ul>
+      </div>
+
+      <div class="controls">
+        <div class="songinfo"></div>
+        <img id="previous" src="previous.svg" alt="">
+       <img id="play" src="play.svg" alt="">
+       <img id="next" src="next.svg" alt="">
+       <div class ="controls-right">
+       <div class="songduration"></div>
+       <div class="volume">
+        <img src="volume.svg" alt="">
+        <div class="range">
+          <input type="range" name="volume-slider">
+        </div>
+       </div>
+       </div>
+      </div>
+      <div class="seekbaar">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
